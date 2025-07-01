@@ -1,0 +1,27 @@
+
+---
+layout: default
+---
+<div class="repositories">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+  
+  <div class="repo-list">
+    {% raw %}{% for repository in site.github.public_repositories %}
+      <div class="repo-item">
+        <h2>
+          <a href="{{ repository.html_url }}">{{ repository.name }}</a>
+        </h2>
+        {% if repository.description %}
+          <p class="repo-description">{{ repository.description }}</p>
+        {% endif %}
+        <p class="repo-meta">
+          {% if repository.language %}
+            <span class="language">{{ repository.language }}</span>
+          {% endif %}
+          <span class="stars">★ {{ repository.stargazers_count }}</span>
+        </p>
+      </div>
+    {% endfor %}{% endraw %}
+  </div>
+</div>
