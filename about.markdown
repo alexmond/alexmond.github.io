@@ -1,18 +1,44 @@
----
-layout: page
-title: About
-permalink: /about/
----
+@import "{{ site.theme }}";
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+.repo-list {
+  margin: 2em 0;
+  
+  .repo-item {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    
+    h2 {
+      margin: 0;
+      font-size: 1.4em;
+      
+      a {
+        color: #0366d6;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    .repo-description {
+      color: #586069;
+      margin: 0.5em 0;
+    }
+    
+    .repo-meta {
+      margin: 0.5em 0 0;
+      font-size: 0.9em;
+      
+      .language {
+        margin-right: 1em;
+      }
+      
+      .stars {
+        color: #586069;
+      }
+    }
+  }
+}
