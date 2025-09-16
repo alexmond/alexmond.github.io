@@ -5,7 +5,7 @@ site:
   url: https://alexmond.github.io/
   start_page:  main::index.adoc
   keys:
-    google_analytics: G-KW01QZN663
+    google_analytics: 'G-KW01QZN663'
 content:
   sources:
     - url: ./
