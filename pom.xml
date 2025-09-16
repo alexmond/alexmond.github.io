@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
@@ -9,10 +10,12 @@
     <name>doc</name>
     <description>doc</description>
     <properties>
-        <docs.main>spring-cloud-task</docs.main>
         <main.basedir>${basedir}/..</main.basedir>
         <!-- Don't upload docs jar to central / repo.spring.io -->
         <maven-deploy-plugin-default.phase>none</maven-deploy-plugin-default.phase>
+<!--        <antora-component-version.version>0.3.0</antora-component-version.version>-->
+        <antora-maven-plugin.version>1.0.0-alpha.5</antora-maven-plugin.version>
+        <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
     </properties>
 <!--    <build>-->
 <!--        <sourceDirectory>src/main/asciidoc</sourceDirectory>-->
@@ -25,21 +28,15 @@
             </resource>
         </resources>
         <plugins>
-            <plugin>
-                <groupId>pl.project13.maven</groupId>
-                <artifactId>git-commit-id-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>io.spring.maven.antora</groupId>
-                <artifactId>antora-component-version-maven-plugin</artifactId>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>io.spring.maven.antora</groupId>-->
+<!--                <artifactId>antora-component-version-maven-plugin</artifactId>-->
+<!--                <version>${antora-component-version.version}</version>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.antora</groupId>
                 <artifactId>antora-maven-plugin</artifactId>
+                <version>${antora-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>generate-antora-docs</id>
@@ -55,6 +52,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven-deploy-plugin.version}</version>
             </plugin>
         </plugins>
     </build>
