@@ -1,6 +1,6 @@
 [#_spring_boot_config_json_schema_generator]
 == Welcome to My Dev Hub
-Alex Mondshain <alex.mondshaing@gmail.com>
+Alex Mondshain <alex.mondshain@gmail.com>
 
 Welcome to my developer site!
 Here you'll find documentation for my open-source projects and contributions.
