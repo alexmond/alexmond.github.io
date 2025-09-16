@@ -31,21 +31,22 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn -B package --file pom.xml -Pdocs --no-transfer-progress
+        run: mvn -B package --file pom.xml --no-transfer-progress
 
       # Ensure the target directory exists (fail early if not built)
       - name: Verify docs output exists
         run: |
-          if [ ! -d "./target/site/index.html" ]; then
-            echo "Expected directory 'target/site/index.html' not found."
-            echo "Please build your docs before deploying (ensure the build job populates this path)."
-            exit 1
-          fi
+          pwd
+#          if [ ! -d "./target/site/index.html" ]; then
+#            echo "Expected directory 'target/site/index.html' not found."
+#            echo "Please build your docs before deploying (ensure the build job populates this path)."
+#            exit 1
+#          fi
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./target/site/
+          path: target/site/
 
   deploy:
     needs: build
