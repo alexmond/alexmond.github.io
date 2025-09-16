@@ -1,0 +1,9 @@
+[#_spring_boot_config_json_schema_generator]
+== Welcome to My Dev Hub
+Alex Mondshain <alex.mondshaing@gmail.com>
+
+Welcome to my developer site!
+Here you'll find documentation for my open-source projects and contributions.
+
+I'm passionate about building tools that make developers' lives easier.
+Browse through the projects below to learn more about what I'm working on.
