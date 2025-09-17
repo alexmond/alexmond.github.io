@@ -13,7 +13,8 @@ content:
       branches: main
       worktrees: true
     - url: https://github.com/alexmond/spring-boot-config-json-schema.git
-      branches: main
+      tags: 1.0.1
+      branches: []
       start_path: docs
       edit_url: false
     - url: https://github.com/alexmond/spring-boot-actuator-extensions.git

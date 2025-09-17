@@ -2,4 +2,4 @@ name: main
 version: true
 title: main
 nav:
-  - modules/ROOT/index.adoc
+  - modules/ROOT/nav.adoc
