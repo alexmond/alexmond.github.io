@@ -18,7 +18,8 @@ content:
       start_path: docs
       edit_url: false
     - url: https://github.com/alexmond/spring-boot-actuator-extensions.git
-      branches: antora
+      branches: []
+      tags: 1.0.0
       start_path: docs
       edit_url: false
 #    - url: https://github.com/nrepl/nrepl.git
@@ -34,3 +35,5 @@ urls:
   latest_version_segment: current
 runtime:
   cache_dir: ./target/antoracache
+  log:
+    level: info
