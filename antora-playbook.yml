@@ -4,6 +4,7 @@ site:
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://alexmond.github.io/
   start_page:  main::index.adoc
+  robots: allow
   keys:
     google_analytics: 'G-KW01QZN663'
 content:
