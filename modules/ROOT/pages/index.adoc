@@ -1,4 +1,8 @@
 [#_spring_boot_config_json_schema_generator]
+[#_spring_boot_config_json_schema_generator]
+= Alex's Developer Documentation Hub
+:description: Documentation hub for open-source projects and contributions by Alex Mondshain
+:keywords: spring boot, json schema, actuator extensions, documentation, open source
 == Welcome to My Dev Hub
 Alex Mondshain <alex.mondshain@gmail.com>
 
