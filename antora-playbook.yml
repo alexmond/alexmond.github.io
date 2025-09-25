@@ -6,7 +6,7 @@ site:
   start_page:  main::index.adoc
   robots: |
       User-agent: *
-      Disallow:
+      Allow: /
       Sitemap: https://alexmond.github.io/sitemap.xml
   keys:
     google_analytics: 'G-KW01QZN663'
