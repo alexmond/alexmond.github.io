@@ -17,7 +17,7 @@ content:
       branches: main
       worktrees: true
     - url: https://github.com/alexmond/spring-boot-config-json-schema.git
-      tags: 1.0.3
+      tags: 1.0.4
       branches: []
       start_path: docs
       edit_url: false
