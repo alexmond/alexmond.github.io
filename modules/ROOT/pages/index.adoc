@@ -23,3 +23,9 @@ link:/spring-boot-config-json-schema-starter/current/index.html[Learn more about
 
 Collection of custom Spring Boot Actuator endpoints and extensions to enhance application monitoring and management capabilities.
 link:/extensions/current/index.html[Learn more about Actuator Extensions^]
+
+=== Spring Boot Examples
+
+Collection of Spring Boot example projects demonstrating various features and integration patterns.
+link:/spring-boot-playground/current/index.html[Explore Spring Boot Examples^]
+
