@@ -29,6 +29,10 @@ content:
       edit_url: false
       branches: main
       start_path: docs
+    - url: https://github.com/alexmond/spring-boot-supervisor.git
+      edit_url: false
+      branches: main
+      start_path: docs
 ui:
   bundle:
     url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.15/ui-bundle.zip
