@@ -33,6 +33,11 @@ content:
       edit_url: false
       branches: main
       start_path: docs
+    - url: https://github.com/oasis-tcs/sarif-spec.git
+      branches: [ ]
+      tags: 0.0.1
+      start_path: docs
+      edit_url: false
 ui:
   bundle:
     url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.15/ui-bundle.zip
