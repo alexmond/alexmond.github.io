@@ -33,7 +33,7 @@ content:
       edit_url: false
       branches: main
       start_path: docs
-    - url: https://github.com/oasis-tcs/sarif-spec.git
+    - url: git@github.com:alexmond/yj-schema-validator.git
       branches: [ ]
       tags: 0.0.1
       start_path: docs
