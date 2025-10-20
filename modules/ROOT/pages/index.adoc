@@ -19,6 +19,12 @@ Browse through the projects below to learn more about what I'm working on.
 A Spring Boot starter that automatically generates JSON Schema documentation for your application's configuration properties.
 link:/spring-boot-config-json-schema-starter/current/index.html[Learn more about Config JSON Schema Generator^]
 
+=== Yaml Json Schema Validator
+
+A simple command-line utility built with Spring Boot for validating YAML/JSON files against JSON Schema definitions. It's designed for quick checks in development or CI/CD workflows, leveraging Jackson for parsing YAML/JSON and NetworkNT JSON Schema Validator for the core validation logic.
+
+link:/yj-schema-validator/current/index.html[Learn more about yj-schema-validator^]
+
 === Spring Boot Actuator Extensions
 
 Collection of custom Spring Boot Actuator endpoints and extensions to enhance application monitoring and management capabilities.
