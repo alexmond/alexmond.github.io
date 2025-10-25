@@ -35,7 +35,7 @@ content:
       start_path: docs
     - url: git@github.com:alexmond/yj-schema-validator.git
       branches: [ ]
-      tags: 0.0.5
+      tags: 1.0.0
       start_path: docs
       edit_url: false
 ui:
