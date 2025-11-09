@@ -36,6 +36,8 @@ jobs:
       - name: Verify docs output exists
         run: |
           pwd
+          mkdir target/site/sitemaps
+          cp target/site/sitemap*.xml target/site/sitemaps
 #          if [ ! -d "./target/site/index.html" ]; then
 #            echo "Expected directory 'target/site/index.html' not found."
 #            echo "Please build your docs before deploying (ensure the build job populates this path)."

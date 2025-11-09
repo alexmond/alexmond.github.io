@@ -45,7 +45,9 @@
                             <goal>antora</goal>
                         </goals>
                         <configuration>
-
+                            <additionalPackages>
+                                <package>@springio/antora-extensions</package>
+                            </additionalPackages>
                         </configuration>
                     </execution>
                 </executions>
