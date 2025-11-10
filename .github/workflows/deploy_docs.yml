@@ -52,8 +52,9 @@ jobs:
 #          key: ${{ secrets.SSH_PRIVATE_KEY }}
           password: ${{ secrets.SSH_PASS }}
           port: 22
-          source: "target/site/"
+          source: "target/site/*"
           target: "."
+          strip_components: 1
           overwrite: true
 
   deploy:
