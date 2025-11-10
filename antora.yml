@@ -1,5 +1,5 @@
-name: main
+name: home
 version: true
-title: main
+title: home
 nav:
   - modules/ROOT/nav.adoc

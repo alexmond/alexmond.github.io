@@ -4,12 +4,12 @@ antora:
 site:
   title: Alex Dev hub
   # the 404 page and sitemap files only get generated when the url property is set
-  url: https://alexmond.github.io/
+  url: https://www.alexmond.org/
   start_page:  main::index.adoc
   robots: |
       User-agent: *
       Allow: /
-      Sitemap: https://alexmond.github.io/sitemap.xml
+      Sitemap: https://www.alexmond.org/sitemap.xml
   keys:
     google_analytics: 'G-KW01QZN663'
 content:
