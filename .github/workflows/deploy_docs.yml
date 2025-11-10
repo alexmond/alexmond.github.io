@@ -51,8 +51,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
 #          key: ${{ secrets.SSH_PRIVATE_KEY }}
           password: ${{ secrets.SSH_PASS }}
+          strip_components: true
           port: 22
-          source: "target/site/*"
+          source: "target/site/"
           target: "."
           overwrite: true
 
