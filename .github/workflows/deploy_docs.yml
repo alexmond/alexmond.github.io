@@ -38,16 +38,22 @@ jobs:
           pwd
           mkdir target/site/sitemaps
           cp target/site/sitemap*.xml target/site/sitemaps
-#          if [ ! -d "./target/site/index.html" ]; then
-#            echo "Expected directory 'target/site/index.html' not found."
-#            echo "Please build your docs before deploying (ensure the build job populates this path)."
-#            exit 1
-#          fi
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: target/site/
+          
+      - name: Copy files to server via SCP
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          source: "target/site/*"
+          target: "."
+          overwrite: true
 
   deploy:
     needs: build
