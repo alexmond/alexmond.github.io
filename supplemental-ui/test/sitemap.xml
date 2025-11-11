@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap>
-<loc>https://alexmond.github.io/sitemap-extensions.xml</loc>
+<loc>https://www.alexmond.org/sitemap-extensions.xml</loc>
 </sitemap>
 <sitemap>
-<loc>https://alexmond.github.io/sitemap-jsupervisor.xml</loc>
+<loc>https://www.alexmond.org/sitemap-jsupervisor.xml</loc>
 </sitemap>
 <sitemap>
-<loc>https://alexmond.github.io/sitemap-main.xml</loc>
+<loc>https://www.alexmond.org/sitemap-main.xml</loc>
 </sitemap>
 <sitemap>
-<loc>https://alexmond.github.io/sitemap-samples.xml</loc>
+<loc>https://www.alexmond.org/sitemap-samples.xml</loc>
 </sitemap>
 <sitemap>
-<loc>https://alexmond.github.io/sitemap-spring-boot-config-json-schema-starter.xml</loc>
+<loc>https://www.alexmond.org/sitemap-spring-boot-config-json-schema-starter.xml</loc>
 </sitemap>
 </sitemapindex>
