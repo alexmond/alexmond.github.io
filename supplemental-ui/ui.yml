@@ -3,3 +3,4 @@ static_files:
   - .nojekyll
   - yandex_02a206ec23e6b582.html
   - favicon.ico
+  - .htaccess
