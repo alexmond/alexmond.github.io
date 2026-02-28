@@ -44,7 +44,7 @@ content:
     - url: https://github.com/alexmond/jhelm.git
       edit_url: false
       branches: main
-      start_path: docs
+      start_path: doc
 
 ui:
   bundle:
