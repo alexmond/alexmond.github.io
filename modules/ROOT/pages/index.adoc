@@ -39,7 +39,7 @@ link:/jsupervisor/current/index.html[Learn more about JSupervisor^]
 
 A native Java implementation of the Helm package manager for Kubernetes. Enables rendering templates, managing charts, and deploying releases without relying on the Go-based Helm CLI. Features include full Go template and Sprig function compatibility, chart lifecycle management, OCI registry support, and Spring Boot integration.
 
-link:/jhelm/current/index.html[Learn more about JHelm^]
+link:/jhelm/index.html[Learn more about JHelm^]
 
 === Spring Boot Examples
 
