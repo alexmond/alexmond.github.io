@@ -2,7 +2,7 @@ antora:
   extensions:
     - require: '@springio/antora-extensions/root-attachments-extension'
 site:
-  title: Alex Dev hub
+  title: Alex Mondshain's Developer Hub
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://www.alexmond.org/
   start_page: home::index.adoc
