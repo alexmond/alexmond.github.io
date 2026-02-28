@@ -36,11 +36,16 @@ content:
       edit_url: false
       branches: main
       start_path: docs
-    - url: git@github.com:alexmond/yj-schema-validator.git
-      branches: [ ]
+    - url: https://github.com/alexmond/yj-schema-validator.git
+      branches: []
       tags: 2.0.2
       start_path: docs
       edit_url: false
+    - url: https://github.com/alexmond/jhelm.git
+      edit_url: false
+      branches: main
+      start_path: docs
+
 ui:
   bundle:
     url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.15/ui-bundle.zip
