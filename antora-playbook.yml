@@ -45,6 +45,10 @@ content:
       edit_url: false
       branches: main
       start_path: docs
+    - url: https://github.com/alexmond/alexmskills.git
+      edit_url: false
+      branches: main
+      start_path: docs
 
 ui:
   bundle:
