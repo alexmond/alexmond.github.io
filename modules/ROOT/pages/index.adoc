@@ -13,6 +13,12 @@ Browse through the projects below to learn more about what I'm working on.
 
 == Projects
 
+=== alexmskills — Claude Code Skills Marketplace
+
+A curated https://code.claude.com[Claude Code] plugin marketplace of reusable, *self-improving* skills and agents — each an independently versioned plugin. It includes a self-evolving `CLAUDE.md`, a delivery crew that composes a task-fit roster to ship a target, a brainstorm panel, and a shared *evolving-roles* system that lets one persona run solo, as a crew role, or as a panel seat while accumulating what it learns.
+
+link:/alexmskills/index.html[Explore the alexmskills marketplace^] · link:/alexmskills/role-system.html[Read the Role System architecture^]
+
 === Spring Boot Config JSON Schema Generator
 
 A Spring Boot starter that automatically generates JSON Schema documentation for your application's configuration properties.
