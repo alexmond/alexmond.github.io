@@ -35,6 +35,12 @@ link:/yj-schema-validator/current/index.html[Learn more about yj-schema-validato
 Collection of custom Spring Boot Actuator endpoints and extensions to enhance application monitoring and management capabilities.
 link:/extensions/current/index.html[Learn more about Actuator Extensions^]
 
+=== notify4j
+
+An embeddable, domain-agnostic multi-channel notification library for Java/Spring Boot — no server to run. Declare channels as Apprise/shoutrrr-style URLs (Slack, Teams, Discord, Telegram, ntfy, webhook, PagerDuty, OpsGenie, and email) and get status-transition filtering, runtime mute, tag-based routing, and reminders for free.
+
+link:/notify4j/current/index.html[Learn more about notify4j^]
+
 === JSupervisor
 
 A Spring Boot implementation of a process supervisor system for monitoring and managing multiple processes in a Java environment. Provides lifecycle management, health monitoring through HTTP, TCP, Actuator and command-line checks, and configurable log rotation.
