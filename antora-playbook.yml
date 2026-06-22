@@ -41,6 +41,11 @@ content:
       tags: 2.0.2
       start_path: docs
       edit_url: false
+    - url: https://github.com/alexmond/notify4j.git
+      branches: []
+      tags: 0.2.0
+      start_path: docs
+      edit_url: false
     - url: https://github.com/alexmond/jhelm.git
       edit_url: false
       branches: main
