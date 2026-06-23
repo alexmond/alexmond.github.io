@@ -53,6 +53,12 @@ A native Java implementation of the Helm package manager for Kubernetes. Enables
 
 link:/jhelm/index.html[Learn more about JHelm^]
 
+=== gotmpl4j
+
+A pure-Java implementation of Go's `text/template` engine, with the Sprig function library and an optional Spring Boot starter — no Go toolchain or native bindings. It renders the same templates Helm, Hugo, and countless Go CLIs use, and is validated for byte-for-byte parity against Go's own `text/template` test suite and Sprig's upstream tests. This is the engine that powers JHelm.
+
+link:/gotmpl4j/current/index.html[Learn more about gotmpl4j^]
+
 === Spring Boot Examples
 
 Collection of Spring Boot example projects demonstrating various features and integration patterns.
