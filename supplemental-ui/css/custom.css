@@ -38,7 +38,8 @@
     text-decoration: none;
 }
 .doc .hub-btn-primary {
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    /* Spring-green accent to match the antora-ui-spring skin */
+    background: linear-gradient(135deg, #6db33f, #4f9a2f);
     color: #fff;
     border-color: transparent;
 }
@@ -66,8 +67,8 @@
     transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
 }
 .doc .hub-card:hover {
-    border-color: rgba(99, 102, 241, .55);
-    background: rgba(99, 102, 241, .07);
+    border-color: rgba(109, 179, 63, .6);
+    background: rgba(109, 179, 63, .08);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
     text-decoration: none;
