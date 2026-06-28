@@ -13,6 +13,12 @@ Browse through the projects below to learn more about what I'm working on.
 
 == Projects
 
+=== UniTrack
+
+A self-hosted server for tracking test execution and code coverage over time — Allure-meets-Codecov, and polyglot (JVM, Go, .NET, Node, and more). CI uploads JUnit/Surefire results plus JaCoCo/Cobertura/LCOV/OpenCover coverage and load-test results (JMeter, k6, JMH) via a CLI, a GitHub Action, or the REST API; UniTrack renders trends over a true time axis, flaky-test detection, quality gates, failure clustering with click-to-run AI root-cause analysis, and a board that surfaces slow regressions with a "broken since" rot signal. Includes per-project API tokens, email/Slack alerts, GitHub PR checks, and an MCP server for AI assistants.
+
+link:/unitrack/index.html[Learn more about UniTrack^]
+
 === alexmskills — Claude Code Skills Marketplace
 
 A curated https://code.claude.com[Claude Code] plugin marketplace of reusable, *self-improving* skills and agents — each an independently versioned plugin. It includes a self-evolving `CLAUDE.md`, a delivery crew that composes a task-fit roster to ship a target, a brainstorm panel, and a shared *evolving-roles* system that lets one persona run solo, as a crew role, or as a panel seat while accumulating what it learns.
