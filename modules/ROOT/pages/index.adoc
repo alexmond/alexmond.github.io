@@ -1,78 +1,85 @@
-[#_spring_boot_config_json_schema_generator]
-= Alex's Developer Documentation Hub
-:description: Documentation hub for open-source projects and contributions by Alex Mondshain
-:keywords: spring boot, json schema, actuator extensions, documentation, open source
-== Welcome to My Dev Hub
+= JVM and AI-agent developer tools
+:description: Open-source JVM and AI-agent developer tools by Alex Mondshain — profiling, Helm, Go templates, notifications, test/coverage tracking, and self-learning Claude Code skills.
+:keywords: jvm, java, spring boot, helm, go template, claude code, ai agents, test coverage, profiling, open source
+
 Alex Mondshain <alex.mondshain@gmail.com>
 
-Welcome to my developer site!
-Here you'll find documentation for my open-source projects and contributions.
+++++
+<div class="hub-hero">
+  <p class="hub-hero-sub">I build open-source tools that make developers' lives easier — byte-for-byte JVM ports of Go &amp; Helm tooling, LLM-ready profiling, and self-learning Claude Code skills. Everything's on GitHub; the Java libraries publish to Maven Central under <code>org.alexmond</code>.</p>
+  <div class="hub-hero-cta">
+    <a class="hub-btn hub-btn-primary" href="https://github.com/alexmond">Follow on GitHub</a>
+    <a class="hub-btn" href="#featured">Browse projects ↓</a>
+  </div>
+</div>
+++++
 
-I'm passionate about building tools that make developers' lives easier.
-Browse through the projects below to learn more about what I'm working on.
+[#featured]
+== Featured
 
-== Projects
+++++
+<div class="hub-cards">
+  <a class="hub-card" href="/jvmlens/current/index.html">
+    <span class="hub-card-name">jvmlens</span>
+    <span class="hub-card-desc">JVM diagnostics your AI agent can actually read — a JFR recording becomes a few-hundred-token, source-attributed, <strong>LLM-ready</strong> diagnosis instead of a multi-MB <code>jfr print</code> dump.</span>
+    <span class="hub-card-tags">profiling · MCP · LLM-ready</span>
+  </a>
+  <a class="hub-card" href="/jhelm/index.html">
+    <span class="hub-card-name">jhelm</span>
+    <span class="hub-card-desc">Native Java Helm — render charts and manage releases without the Go binary. <strong>Byte-for-byte across 346 real charts</strong>, now MCP-native. Built on gotmpl4j.</span>
+    <span class="hub-card-tags">kubernetes · helm · MCP</span>
+  </a>
+  <a class="hub-card" href="/alexmskills/index.html">
+    <span class="hub-card-name">alexmskills</span>
+    <span class="hub-card-desc">A curated Claude Code marketplace of <strong>self-learning</strong> skills and agents — a <code>CLAUDE.md</code> that prunes its own decisions, a delivery crew, a brainstorm panel, and evolving roles.</span>
+    <span class="hub-card-tags">claude code · self-learning</span>
+  </a>
+  <a class="hub-card" href="/unitrack/index.html">
+    <span class="hub-card-name">UniTrack</span>
+    <span class="hub-card-desc">Self-hosted test &amp; coverage tracking that explains <strong>why</strong> builds break — quality gate, flaky detection, failure clustering, polyglot coverage, GitHub PR checks.</span>
+    <span class="hub-card-tags">testing · coverage · self-hosted</span>
+  </a>
+</div>
+++++
 
-=== UniTrack
+== Libraries and tools
 
-A self-hosted server for tracking test execution and code coverage over time — Allure-meets-Codecov, and polyglot (JVM, Go, .NET, Node, and more). CI uploads JUnit/Surefire results plus JaCoCo/Cobertura/LCOV/OpenCover coverage and load-test results (JMeter, k6, JMH) via a CLI, a GitHub Action, or the REST API; UniTrack renders trends over a true time axis, flaky-test detection, quality gates, failure clustering with click-to-run AI root-cause analysis, and a board that surfaces slow regressions with a "broken since" rot signal. Includes per-project API tokens, email/Slack alerts, GitHub PR checks, and an MCP server for AI assistants.
-
-link:/unitrack/index.html[Learn more about UniTrack^]
-
-=== alexmskills — Claude Code Skills Marketplace
-
-A curated https://code.claude.com[Claude Code] plugin marketplace of reusable, *self-improving* skills and agents — each an independently versioned plugin. It includes a self-evolving `CLAUDE.md`, a delivery crew that composes a task-fit roster to ship a target, a brainstorm panel, and a shared *evolving-roles* system that lets one persona run solo, as a crew role, or as a panel seat while accumulating what it learns.
-
-link:/alexmskills/index.html[Explore the alexmskills marketplace^] · link:/alexmskills/role-system.html[Read the Role System architecture^]
-
-=== Spring Boot Config JSON Schema Generator
-
-A Spring Boot starter that automatically generates JSON Schema documentation for your application's configuration properties.
-link:/spring-boot-config-json-schema-starter/current/index.html[Learn more about Config JSON Schema Generator^]
-
-=== Yaml Json Schema Validator
-
-A simple command-line utility built with Spring Boot for validating YAML/JSON files against JSON Schema definitions. It's designed for quick checks in development or CI/CD workflows, leveraging Jackson for parsing YAML/JSON and NetworkNT JSON Schema Validator for the core validation logic.
-
-link:/yj-schema-validator/current/index.html[Learn more about yj-schema-validator^]
-
-=== Spring Boot Actuator Extensions
-
-Collection of custom Spring Boot Actuator endpoints and extensions to enhance application monitoring and management capabilities.
-link:/extensions/current/index.html[Learn more about Actuator Extensions^]
-
-=== notify4j
-
-An embeddable, domain-agnostic multi-channel notification library for Java/Spring Boot — no server to run. Declare channels as Apprise/shoutrrr-style URLs (Slack, Teams, Discord, Telegram, ntfy, webhook, PagerDuty, OpsGenie, and email) and get status-transition filtering, runtime mute, tag-based routing, and reminders for free.
-
-link:/notify4j/current/index.html[Learn more about notify4j^]
-
-=== JSupervisor
-
-A Spring Boot implementation of a process supervisor system for monitoring and managing multiple processes in a Java environment. Provides lifecycle management, health monitoring through HTTP, TCP, Actuator and command-line checks, and configurable log rotation.
-
-link:/jsupervisor/current/index.html[Learn more about JSupervisor^]
-
-=== JHelm
-
-A native Java implementation of the Helm package manager for Kubernetes. Enables rendering templates, managing charts, and deploying releases without relying on the Go-based Helm CLI. Features include full Go template and Sprig function compatibility, chart lifecycle management, OCI registry support, and Spring Boot integration.
-
-link:/jhelm/index.html[Learn more about JHelm^]
-
-=== gotmpl4j
-
-A pure-Java implementation of Go's `text/template` engine, with the Sprig function library and an optional Spring Boot starter — no Go toolchain or native bindings. It renders the same templates Helm, Hugo, and countless Go CLIs use, and is validated for byte-for-byte parity against Go's own `text/template` test suite and Sprig's upstream tests. This is the engine that powers JHelm.
-
-link:/gotmpl4j/current/index.html[Learn more about gotmpl4j^]
-
-=== jvmlens
-
-Turn JVM runtime evidence into an LLM-ready diagnosis. jvmlens reads a JFR recording and emits a few hundred tokens of ranked, source-attributed signal — hot paths, allocation sites, lock contention, GC pressure, a hedged cause — where a raw `jfr print` dump is hundreds of thousands of tokens. A CLI (`analyze`/`profile`/`bench`/`watch`/`trend`/`mcp`), an in-process `-javaagent`, a JMH profiler, and a scoped MCP server all reuse the one dependency-free engine. It serves data only — never calls an LLM, never ships recordings anywhere.
-
-link:/jvmlens/current/index.html[Learn more about jvmlens^]
-
-=== Spring Boot Examples
-
-Collection of Spring Boot example projects demonstrating various features and integration patterns.
-link:/spring-boot-playground/current/index.html[Explore Spring Boot Examples^]
-
+++++
+<div class="hub-cards">
+  <a class="hub-card" href="/gotmpl4j/current/index.html">
+    <span class="hub-card-name">gotmpl4j</span>
+    <span class="hub-card-desc">Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity vs Go's own test suite. The engine under jhelm.</span>
+    <span class="hub-card-tags">go template · jvm</span>
+  </a>
+  <a class="hub-card" href="/notify4j/current/index.html">
+    <span class="hub-card-name">notify4j</span>
+    <span class="hub-card-desc">Embeddable multi-channel notifications for Java/Spring Boot — Slack, Teams, Discord, Telegram, ntfy, PagerDuty… as Apprise-style URLs. No server to run.</span>
+    <span class="hub-card-tags">spring · notifications</span>
+  </a>
+  <a class="hub-card" href="/spring-boot-config-json-schema-starter/current/index.html">
+    <span class="hub-card-name">Config JSON Schema</span>
+    <span class="hub-card-desc">Auto-generate JSON Schema from your <code>@ConfigurationProperties</code> — IDE autocomplete and config validation in CI.</span>
+    <span class="hub-card-tags">spring boot</span>
+  </a>
+  <a class="hub-card" href="/extensions/current/index.html">
+    <span class="hub-card-name">Actuator Extensions</span>
+    <span class="hub-card-desc">A sensitive-data sanitizer plus extra health indicators (HTTP, port, manual) for better Spring Boot monitoring.</span>
+    <span class="hub-card-tags">spring · actuator</span>
+  </a>
+  <a class="hub-card" href="/jsupervisor/current/index.html">
+    <span class="hub-card-name">JSupervisor</span>
+    <span class="hub-card-desc">supervisord for the JVM — process supervision with HTTP/TCP/Actuator/CLI health checks, log rotation, and a UI/REST/CLI.</span>
+    <span class="hub-card-tags">java · ops</span>
+  </a>
+  <a class="hub-card" href="/yj-schema-validator/current/index.html">
+    <span class="hub-card-name">yj-schema-validator</span>
+    <span class="hub-card-desc">Validate YAML/JSON against JSON Schema (drafts 2019-09 / 2020-12) — colored / JSON / JUnit output for quick checks or CI gates.</span>
+    <span class="hub-card-tags">cli · ci</span>
+  </a>
+  <a class="hub-card" href="/spring-boot-playground/current/index.html">
+    <span class="hub-card-name">Spring Boot Examples</span>
+    <span class="hub-card-desc">A hands-on hub of Spring Boot example projects — REST, security, JPA, OpenAPI, admin monitoring, and AI integrations.</span>
+    <span class="hub-card-tags">spring · learning</span>
+  </a>
+</div>
+++++

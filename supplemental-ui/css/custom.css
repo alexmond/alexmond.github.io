@@ -2,3 +2,92 @@
     width: 400px;
     left: -20px;
 }
+
+/* ===== Home hub landing (hero + project cards) ===== */
+/* Scoped under .doc to win specificity over the UI's default link styles, and
+   theme-agnostic (neutral rgba + inherit) so it works on light and dark. */
+
+.doc .hub-hero {
+    margin: 0 0 2.25rem;
+}
+.doc .hub-hero-sub {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 48rem;
+    opacity: .9;
+    margin: .25rem 0 1.25rem;
+}
+.doc .hub-hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+.doc .hub-btn {
+    display: inline-block;
+    padding: .55rem 1.15rem;
+    border-radius: 8px;
+    border: 1px solid rgba(127, 127, 127, .35);
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform .15s ease, border-color .15s ease, filter .15s ease;
+}
+.doc .hub-btn:hover {
+    border-color: rgba(127, 127, 127, .6);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+.doc .hub-btn-primary {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    border-color: transparent;
+}
+.doc .hub-btn-primary:hover {
+    filter: brightness(1.08);
+    color: #fff;
+}
+
+.doc .hub-cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin: 1.25rem 0 2.5rem;
+}
+.doc .hub-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(127, 127, 127, .2);
+    background: rgba(127, 127, 127, .05);
+    color: inherit;
+    text-decoration: none;
+    transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.doc .hub-card:hover {
+    border-color: rgba(99, 102, 241, .55);
+    background: rgba(99, 102, 241, .07);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+    text-decoration: none;
+}
+.doc .hub-card-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+.doc .hub-card-desc {
+    font-size: .92rem;
+    line-height: 1.5;
+    opacity: .85;
+    flex: 1 1 auto;
+}
+.doc .hub-card-tags {
+    font-size: .78rem;
+    opacity: .6;
+    font-variant: small-caps;
+    letter-spacing: .02em;
+}
+.doc .hub-card code {
+    font-size: .85em;
+}
