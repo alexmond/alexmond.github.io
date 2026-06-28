@@ -57,7 +57,7 @@ content:
       start_path: docs
     - url: https://github.com/alexmond/gotmpl4j.git
       branches: []
-      tags: 1.0.0
+      tags: 1.1.1
       start_path: docs
       edit_url: false
     - url: https://github.com/alexmond/jvmlens.git
