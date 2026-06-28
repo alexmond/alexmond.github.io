@@ -56,6 +56,11 @@ content:
       tags: 1.0.0
       start_path: docs
       edit_url: false
+    - url: https://github.com/alexmond/jvmlens.git
+      branches: []
+      tags: 0.1.0
+      start_path: docs
+      edit_url: false
     - url: https://github.com/alexmond/alexmskills.git
       edit_url: false
       branches: main
