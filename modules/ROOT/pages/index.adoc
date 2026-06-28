@@ -59,6 +59,12 @@ A pure-Java implementation of Go's `text/template` engine, with the Sprig functi
 
 link:/gotmpl4j/current/index.html[Learn more about gotmpl4j^]
 
+=== jvmlens
+
+Turn JVM runtime evidence into an LLM-ready diagnosis. jvmlens reads a JFR recording and emits a few hundred tokens of ranked, source-attributed signal — hot paths, allocation sites, lock contention, GC pressure, a hedged cause — where a raw `jfr print` dump is hundreds of thousands of tokens. A CLI (`analyze`/`profile`/`bench`/`watch`/`trend`/`mcp`), an in-process `-javaagent`, a JMH profiler, and a scoped MCP server all reuse the one dependency-free engine. It serves data only — never calls an LLM, never ships recordings anywhere.
+
+link:/jvmlens/current/index.html[Learn more about jvmlens^]
+
 === Spring Boot Examples
 
 Collection of Spring Boot example projects demonstrating various features and integration patterns.
