@@ -48,7 +48,7 @@ Alex Mondshain <alex.mondshain@gmail.com>
 <div class="hub-cards">
   <a class="hub-card" href="/gotmpl4j/current/index.html">
     <span class="hub-card-name">gotmpl4j</span>
-    <span class="hub-card-desc">Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity vs Go's own test suite. The engine under jhelm.</span>
+    <span class="hub-card-desc">Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity across <strong>1,305 of Go's own test cases</strong>. The engine under jhelm.</span>
     <span class="hub-card-tags">go template · jvm</span>
   </a>
   <a class="hub-card" href="/notify4j/current/index.html">
