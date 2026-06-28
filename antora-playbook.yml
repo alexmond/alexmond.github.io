@@ -18,6 +18,10 @@ content:
       edit_url: false
       branches: main
       worktrees: true
+    - url: https://github.com/alexmond/unitrack.git
+      edit_url: false
+      branches: main
+      start_path: docs
     - url: https://github.com/alexmond/spring-boot-config-json-schema.git
       tags: 1.0.9
       branches: []
