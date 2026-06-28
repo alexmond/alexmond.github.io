@@ -2,6 +2,7 @@ name: Deploy Docs
 on:
   - push
   - manual
+checkout: true
 push:
   branches:
     - main
@@ -16,8 +17,6 @@ jobs:
     artifacts:
       - target/site
     steps:
-      - name: checkout
-        run: git clone --depth 1 https://github.com/alexmond/alexmond.github.io.git .
       - name: build
         run: mvn -B package --file pom.xml --no-transfer-progress -Dmaven.repo.local=.m2/repository
       - name: verify-docs-output
