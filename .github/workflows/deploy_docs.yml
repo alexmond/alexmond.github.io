@@ -54,6 +54,12 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy target/site --project-name=alexmond-org --branch=main
 
+      - name: Notify IndexNow (Bing / Yandex / DuckDuckGo)
+        env:
+          INDEXNOW_KEY: d4678ef9e13144ea98140c24f5017559   # public key (also served at /<key>.txt)
+          SITE_HOST: www.alexmond.org
+        run: python3 bin/indexnow-ping.py
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
