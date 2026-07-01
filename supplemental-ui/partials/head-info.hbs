@@ -1,0 +1,22 @@
+    {{#with page.canonicalUrl}}
+    <link rel="canonical" href="{{{this}}}">
+    {{/with}}
+    {{#unless (eq page.attributes.pagination undefined)}}
+    {{#with page.previous}}
+    <link rel="prev" href="{{{relativize ./url}}}">
+    {{/with}}
+    {{#with page.next}}
+    <link rel="next" href="{{{relativize ./url}}}">
+    {{/with}}
+    {{/unless}}
+    {{#if page.description}}
+    <meta name="description" content="{{page.description}}">
+    {{else}}
+    <meta name="description" content="{{page.component.name}} — part of {{site.title}}'s open-source JVM &amp; AI-agent developer tools. Documentation, getting-started guides, configuration &amp; API reference.">
+    {{/if}}
+    {{#with page.keywords}}
+    <meta name="keywords" content="{{this}}">
+    {{/with}}
+    {{#with (or antoraVersion site.antoraVersion)}}
+    <meta name="generator" content="Antora {{this}}">
+    {{/with}}
