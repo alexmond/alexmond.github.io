@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects (copied into the deploy dir by deploy_docs.yml).
+# Renamed Antora components: 301 old paths to new so old links and still-indexed
+# URLs don't 404 (the former /main/ homepage, /samples/ playground).
+/main/*      /home/:splat                    301
+/samples/*   /spring-boot-playground/:splat  301

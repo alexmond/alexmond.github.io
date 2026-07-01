@@ -39,6 +39,7 @@ jobs:
           pwd
           mkdir -p target/site/sitemaps
           cp target/site/sitemap*.xml target/site/sitemaps
+          cp _redirects target/site/_redirects   # Cloudflare Pages redirects (renamed-component 301s)
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
