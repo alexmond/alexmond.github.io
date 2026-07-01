@@ -23,7 +23,7 @@ content:
       branches: main
       start_path: docs
     - url: https://github.com/alexmond/spring-boot-config-json-schema.git
-      tags: 1.0.9
+      tags: 3.5.16.1
       branches: []
       start_path: docs
       edit_url: false
