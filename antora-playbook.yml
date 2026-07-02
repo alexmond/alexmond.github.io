@@ -42,7 +42,7 @@ content:
       start_path: docs
     - url: https://github.com/alexmond/yj-schema-validator.git
       branches: []
-      tags: 2.0.2
+      tags: 3.0.0
       start_path: docs
       edit_url: false
     - url: https://github.com/alexmond/notify4j.git
