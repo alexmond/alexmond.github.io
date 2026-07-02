@@ -62,7 +62,7 @@ content:
       edit_url: false
     - url: https://github.com/alexmond/jvmlens.git
       branches: []
-      tags: 0.2.1
+      tags: 0.2.2
       start_path: docs
       edit_url: false
     - url: https://github.com/alexmond/alexmskills.git
