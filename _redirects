@@ -3,3 +3,16 @@
 # URLs don't 404 (the former /main/ homepage, /samples/ playground).
 /main/*      /home/:splat                    301
 /samples/*   /spring-boot-playground/:splat  301
+
+# Frozen release tags hardcode .html cross-links, but indexify serves extensionless
+# dirs — 301 the known dead ones until the source project re-releases with clean URLs.
+# (jhelm 1.0.0 performance page -> jvmlens / gotmpl4j sub-pages)
+/jvmlens/current/usage.html                   /jvmlens/current/usage/                   301
+/jvmlens/current/case-study-floatstring.html  /jvmlens/current/case-study-floatstring/  301
+/gotmpl4j/current/performance.html            /gotmpl4j/current/performance/            301
+
+# Yandex Webmaster fetches the verification file at its exact .html URL and needs a
+# 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
+# Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
+# no redirect. (status 200 = rewrite/serve-in-place, not a redirect.)
+/yandex_71cce73cb8d268c2.html  /yandex_71cce73cb8d268c2  200
