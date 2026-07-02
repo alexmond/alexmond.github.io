@@ -1,4 +1,4 @@
-name: Deploy Docs to Cloudflare Pages + GitHub Pages
+name: Deploy Docs to Cloudflare Pages
 
 on:
   push:
@@ -7,12 +7,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-  deployments: write
 
 concurrency:
-  group: "pages"
+  group: "deploy-docs"
   cancel-in-progress: true
 
 jobs:
@@ -40,11 +37,6 @@ jobs:
           cp d4678ef9e13144ea98140c24f5017559.txt target/site/   # IndexNow key file (Bing site verification)
           cp yandex_8291effdcecec4ba.html target/site/            # Yandex Webmaster site verification
 
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: pages/
-
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -57,14 +49,3 @@ jobs:
           INDEXNOW_KEY: d4678ef9e13144ea98140c24f5017559   # public key (also served at /<key>.txt)
           SITE_HOST: www.alexmond.org
         run: python3 bin/indexnow-ping.py
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
