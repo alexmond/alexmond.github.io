@@ -38,7 +38,7 @@ jobs:
         run: |
           cp _redirects target/site/_redirects   # Cloudflare Pages redirects (renamed-component 301s)
           cp d4678ef9e13144ea98140c24f5017559.txt target/site/   # IndexNow key file (Bing site verification)
-          cp yandex_71cce73cb8d268c2.html target/site/            # Yandex Webmaster site verification
+          cp yandex_8291effdcecec4ba.html target/site/            # Yandex Webmaster site verification
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

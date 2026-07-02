@@ -15,4 +15,4 @@
 # 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
 # Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
 # no redirect. (status 200 = rewrite/serve-in-place, not a redirect.)
-/yandex_71cce73cb8d268c2.html  /yandex_71cce73cb8d268c2  200
+/yandex_8291effdcecec4ba.html  /yandex_8291effdcecec4ba  200
