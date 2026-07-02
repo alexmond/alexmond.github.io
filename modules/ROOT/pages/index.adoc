@@ -24,7 +24,7 @@ Alex Mondshain <alex.mondshain@gmail.com>
     <span class="hub-card-desc">JVM diagnostics your AI agent can actually read — a JFR recording becomes a few-hundred-token, source-attributed, <strong>LLM-ready</strong> diagnosis instead of a multi-MB <code>jfr print</code> dump.</span>
     <span class="hub-card-tags">profiling · MCP · LLM-ready</span>
   </a>
-  <a class="hub-card" href="/jhelm/index.html">
+  <a class="hub-card" href="/jhelm/current/index.html">
     <span class="hub-card-name">jhelm</span>
     <span class="hub-card-desc">Native Java Helm — render charts and manage releases without the Go binary. <strong>Byte-for-byte across 346 real charts</strong>, now MCP-native. Built on gotmpl4j.</span>
     <span class="hub-card-tags">kubernetes · helm · MCP</span>
