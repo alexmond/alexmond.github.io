@@ -10,6 +10,7 @@
 /jvmlens/current/usage.html                   /jvmlens/current/usage/                   301
 /jvmlens/current/case-study-floatstring.html  /jvmlens/current/case-study-floatstring/  301
 /gotmpl4j/current/performance.html            /gotmpl4j/current/performance/            301
+/jhelm/current/performance.html               /jhelm/current/performance/               301
 
 # Yandex Webmaster fetches the verification file at its exact .html URL and needs a
 # 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
