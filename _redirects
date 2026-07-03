@@ -22,6 +22,15 @@
 /jvmlens-it/       /jvmlens/current/    301
 /jvmlens-jmh/      /jvmlens/current/    301
 
+# Old pre-indexify named-page .html URLs that Google indexed (GSC "Page with redirect",
+# now actually 404 under indexify since only dir/index.html exists). 301 to the clean form
+# so the indexed URL's signal consolidates onto the canonical page. (index.html URLs 308
+# to /dir/ natively via CF clean-URLs — no rule needed for those.)
+/unitrack/load-testing.html               /unitrack/load-testing/               301
+/notify4j/current/getting-started.html    /notify4j/current/getting-started/    301
+/alexmskills/evolving-claude-md.html      /alexmskills/evolving-claude-md/      301
+/alexmskills/research-sweep.html          /alexmskills/research-sweep/          301
+
 # Yandex Webmaster fetches the verification file at its exact .html URL and needs a
 # 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
 # Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
