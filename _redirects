@@ -12,6 +12,16 @@
 /gotmpl4j/current/performance.html            /gotmpl4j/current/performance/            301
 /jhelm/current/performance.html               /jhelm/current/performance/               301
 
+# jvmlens was briefly published as per-module Antora components (jvmlens-agent, -cli,
+# -engine, -it, -jmh) when first added to the hub; now consolidated into one `jvmlens`
+# component at /jvmlens/current/. Google indexed the old module URLs (GSC "Not found
+# 404", 5 pages since 2026-06-12) — 301 them onto the real docs so they drop cleanly.
+/jvmlens-agent/    /jvmlens/current/    301
+/jvmlens-cli/      /jvmlens/current/    301
+/jvmlens-engine/   /jvmlens/current/    301
+/jvmlens-it/       /jvmlens/current/    301
+/jvmlens-jmh/      /jvmlens/current/    301
+
 # Yandex Webmaster fetches the verification file at its exact .html URL and needs a
 # 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
 # Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
