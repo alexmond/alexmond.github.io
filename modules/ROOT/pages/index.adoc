@@ -31,7 +31,7 @@ Alex Mondshain <alex.mondshain@gmail.com>
   </a>
   <a class="hub-card" href="/alexmskills/index.html">
     <span class="hub-card-name">alexmskills</span>
-    <span class="hub-card-desc">A curated Claude Code marketplace of <strong>self-learning</strong> skills and agents — a <code>CLAUDE.md</code> that prunes its own decisions, a delivery crew, a brainstorm panel, and evolving roles.</span>
+    <span class="hub-card-desc">A curated Claude Code marketplace of <strong>self-learning</strong> skills and agents — a <code>CLAUDE.md</code> that prunes its own decisions, a delivery crew, a brainstorm panel, evolving roles, and a prompt coach that nudges you toward better prompts.</span>
     <span class="hub-card-tags">claude code · self-learning</span>
   </a>
   <a class="hub-card" href="/unitrack/index.html">
