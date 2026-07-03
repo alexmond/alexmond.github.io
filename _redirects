@@ -31,6 +31,14 @@
 /alexmskills/evolving-claude-md.html      /alexmskills/evolving-claude-md/      301
 /alexmskills/research-sweep.html          /alexmskills/research-sweep/          301
 
+# More old .html URLs surfaced by GSC ("crawled - not indexed", now 404 under indexify).
+/unitrack/architecture.html                      /unitrack/architecture/                      301
+/unitrack/accounts.html                          /unitrack/accounts/                          301
+/yj-schema-validator/current/contributing.html   /yj-schema-validator/current/contributing/   301
+/jvmlens/current/contributing.html               /jvmlens/current/contributing/               301
+/jvmlens/current/installation.html               /jvmlens/current/installation/               301
+/extensions/current/CHANGELOG.html               /extensions/current/CHANGELOG/               301
+
 # Yandex Webmaster fetches the verification file at its exact .html URL and needs a
 # 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
 # Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
