@@ -11,6 +11,7 @@
 /jvmlens/current/case-study-floatstring.html  /jvmlens/current/case-study-floatstring/  301
 /gotmpl4j/current/performance.html            /gotmpl4j/current/performance/            301
 /jhelm/current/performance.html               /jhelm/current/performance/               301
+/jhelm/current/spring-boot-starter.html       /jhelm/current/spring-boot-starter/       301
 
 # jvmlens was briefly published as per-module Antora components (jvmlens-agent, -cli,
 # -engine, -it, -jmh) when first added to the hub; now consolidated into one `jvmlens`
