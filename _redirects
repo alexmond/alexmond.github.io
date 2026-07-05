@@ -40,6 +40,22 @@
 /jvmlens/current/installation.html               /jvmlens/current/installation/               301
 /extensions/current/CHANGELOG.html               /extensions/current/CHANGELOG/               301
 
+# Old pre-1.0 jhelm URLs: version:master era served pages at /jhelm/<page>.html; jhelm is now
+# version:true at /jhelm/current/. GA4 (Jun 7–Jul 4) shows real sessions still hitting these
+# 404s — 301 to the clean form. (extending-functions/template-engine dropped: pages removed.)
+/jhelm/index.html                 /jhelm/current/                       301
+/jhelm/architecture.html          /jhelm/current/architecture/          301
+/jhelm/cli-reference.html         /jhelm/current/cli-reference/         301
+/jhelm/configuration.html         /jhelm/current/configuration/         301
+/jhelm/core-engine.html           /jhelm/current/core-engine/           301
+/jhelm/development.html           /jhelm/current/development/           301
+/jhelm/getting-started.html       /jhelm/current/getting-started/       301
+/jhelm/helm-functions.html        /jhelm/current/helm-functions/        301
+/jhelm/rest-api.html              /jhelm/current/rest-api/              301
+/jhelm/roadmap.html               /jhelm/current/roadmap/               301
+/jhelm/sprig-functions.html       /jhelm/current/sprig-functions/       301
+/jhelm/spring-boot-starter.html   /jhelm/current/spring-boot-starter/   301
+
 # Yandex Webmaster fetches the verification file at its exact .html URL and needs a
 # 200 — but Cloudflare Pages' clean-URLs 308-redirect .html -> extensionless, which
 # Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
