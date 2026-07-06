@@ -53,7 +53,7 @@ content:
     - url: https://github.com/alexmond/jhelm.git
       edit_url: false
       branches: []
-      tags: 1.1.0
+      tags: 1.2.0
       start_path: docs
     - url: https://github.com/alexmond/gotmpl4j.git
       branches: []
