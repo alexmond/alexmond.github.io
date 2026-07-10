@@ -61,3 +61,29 @@
 # Yandex won't follow. A 200 rewrite serves the file's content at the .html URL with
 # no redirect. (status 200 = rewrite/serve-in-place, not a redirect.)
 /yandex_8291effdcecec4ba.html  /yandex_8291effdcecec4ba  200
+
+# GSC Crawl-stats "Not found (404)" 2026-07-09: old .html / pre-current URLs Googlebot still
+# hits, each with a live indexify clean-URL target (all verified 200). 301 to consolidate signal.
+# unitrack docs pages (version:master, served at /unitrack/<page>/):
+/unitrack/features.html            /unitrack/features/            301
+/unitrack/ai-analysis.html         /unitrack/ai-analysis/         301
+/unitrack/roadmap.html             /unitrack/roadmap/             301
+/unitrack/flaky-detection.html     /unitrack/flaky-detection/     301
+/unitrack/ci-recipes.html          /unitrack/ci-recipes/          301
+/unitrack/coverage-flags.html      /unitrack/coverage-flags/      301
+/unitrack/mcp-server.html          /unitrack/mcp-server/          301
+/unitrack/pr-delta-baseline.html   /unitrack/pr-delta-baseline/   301
+/unitrack/cli.html                 /unitrack/cli/                 301
+# alexmskills docs pages:
+/alexmskills/security-audit.html    /alexmskills/security-audit/    301
+/alexmskills/screenshot-tour.html   /alexmskills/screenshot-tour/   301
+/alexmskills/learn-on-failure.html  /alexmskills/learn-on-failure/  301
+/alexmskills/channels.html          /alexmskills/channels/          301
+# extensions + config-json-schema named pages:
+/extensions/current/sanitizer.html                              /extensions/current/sanitizer/                              301
+/spring-boot-config-json-schema-starter/current/CHANGELOG.html  /spring-boot-config-json-schema-starter/current/CHANGELOG/  301
+# jhelm old version:master indexify URLs (pages moved under /current/ when jhelm went version:true):
+/jhelm/architecture/   /jhelm/current/architecture/   301
+/jhelm/roadmap/        /jhelm/current/roadmap/        301
+/jhelm/security/       /jhelm/current/security/       301
+/jhelm/mcp/            /jhelm/current/mcp/            301
