@@ -87,3 +87,17 @@
 /jhelm/roadmap/        /jhelm/current/roadmap/        301
 /jhelm/security/       /jhelm/current/security/       301
 /jhelm/mcp/            /jhelm/current/mcp/            301
+
+# GSC Crawl-stats "Not found (404)" 2026-07-11 batch: newly-surfaced old .html / pre-current
+# URLs (clean targets verified 200). Same indexify-vs-.html mismatch as prior batches.
+/alexmskills/maven-quality.html       /alexmskills/maven-quality/       301
+/alexmskills/brainstorm-panel.html    /alexmskills/brainstorm-panel/    301
+/alexmskills/roles.html               /alexmskills/roles/               301
+/unitrack/unit-test-performance.html  /unitrack/unit-test-performance/  301
+/unitrack/ingestion.html              /unitrack/ingestion/              301
+/jhelm/core-engine/   /jhelm/current/core-engine/   301
+/jhelm/rest-api/      /jhelm/current/rest-api/      301
+# Structural catch-all for the malformed index.html/<module> family (stale build artifacts;
+# nothing real lives under a .html file, so 301 the whole pattern to the component index).
+/jhelm/current/index.html/*     /jhelm/current/     301
+/gotmpl4j/current/index.html/*  /gotmpl4j/current/  301
