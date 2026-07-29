@@ -1,0 +1,15 @@
+{{!-- Replaces the bundle's "Related Spring Documentation" list (which pulls from
+      spring.io's project index) with the other components on this hub. --}}
+<ul class="projects">
+  <li>
+    Other Projects
+    <ul class="projects-list">
+      {{#each site.components}}
+      {{#unless (eq this @root.page.component)}}
+      <li><a href="{{{relativize ./url}}}">{{{./title}}}</a></li>
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </li>
+  <li><a href="{{{relativize '/index.html'}}}">All Docs&#8230;</a></li>
+</ul>
