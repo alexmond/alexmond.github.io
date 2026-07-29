@@ -3,6 +3,21 @@
     left: -20px;
 }
 
+/* ===== Version-selector modal =====
+   The Spring UI reserves the right half of the modal for its "Related Spring
+   Documentation" list. We blank that partial (supplemental-ui/partials/
+   related-projects.hbs), so the column would render as an empty grey slab —
+   drop it and let the version list use the full width. */
+#modal-versions .colset .col-right {
+    display: none;
+}
+#modal-versions .colset .col-left {
+    flex: 1 1 100%;
+}
+#modal-versions .modal__container {
+    max-width: 32rem;
+}
+
 /* ===== Home hub landing (hero + project cards) ===== */
 /* Scoped under .doc to win specificity over the UI's default link styles, and
    theme-agnostic (neutral rgba + inherit) so it works on light and dark. */
