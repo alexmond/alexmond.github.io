@@ -4,18 +4,31 @@
 }
 
 /* ===== Version-selector modal =====
-   The Spring UI reserves the right half of the modal for its "Related Spring
-   Documentation" list. We blank that partial (supplemental-ui/partials/
-   related-projects.hbs), so the column would render as an empty grey slab —
-   drop it and let the version list use the full width. */
-#modal-versions .colset .col-right {
-    display: none;
+   Left column: versions of the component being read (supplemental version.hbs).
+   Right column: the other projects on the hub (supplemental related-projects.hbs).
+   The bundle's own list styles assume Spring's nested project tree, so the
+   flat list below needs its own spacing and link colours. */
+#modal-versions .col-right .projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
 }
-#modal-versions .colset .col-left {
-    flex: 1 1 100%;
+#modal-versions .col-right .projects-list {
+    list-style: none;
+    margin: .75rem 0 1rem;
+    padding: 0;
+    font-weight: 400;
 }
-#modal-versions .modal__container {
-    max-width: 32rem;
+#modal-versions .col-right .projects-list li {
+    margin: 0 0 .35rem;
+}
+#modal-versions .col-right a {
+    color: inherit;
+    text-decoration: none;
+}
+#modal-versions .col-right a:hover {
+    text-decoration: underline;
 }
 
 /* ===== Home hub landing (hero + project cards) ===== */
