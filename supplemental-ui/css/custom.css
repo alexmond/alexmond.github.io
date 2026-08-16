@@ -120,3 +120,29 @@
 .doc .hub-card code {
     font-size: .85em;
 }
+
+/* ---------------------------------------------------------------------------
+   Home hub sidebar: the project directory.
+
+   The home component's nav.adoc lists every project on the hub. Unlike a
+   project's own nav (a real ToC, where collapsing keeps a long page list
+   manageable), this list is a directory — it exists to be scanned at a glance,
+   so its groups stay open and the collapse toggles are hidden. Scoped to
+   data-component="home" so every other component keeps normal ToC behaviour.
+   Overrides the bundle's `.nav-item:not(.is-active) > .nav-list { display: none }`.
+   --------------------------------------------------------------------------- */
+.nav-container[data-component="home"] .nav-item[data-depth="0"] > .nav-list {
+    display: block;
+}
+.nav-container[data-component="home"] .nav-item[data-depth="0"] > .nav-item-toggle {
+    display: none;
+}
+.nav-container[data-component="home"] .nav-item[data-depth="0"] > .nav-text {
+    display: block;
+    margin: 1.1rem 0 .25rem;
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    opacity: .55;
+}
