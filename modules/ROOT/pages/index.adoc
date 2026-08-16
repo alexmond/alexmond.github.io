@@ -18,68 +18,72 @@ Alex Mondshain <alex.mondshain@gmail.com>
 == Featured
 
 ++++
+<!-- BEGIN cards:featured -->
 <div class="hub-cards">
-  <a class="hub-card" href="/jvmlens/current/index.html">
+  <a class="hub-card" href="/jvmlens/current/">
     <span class="hub-card-name">jvmlens</span>
     <span class="hub-card-desc">JVM diagnostics your AI agent can actually read — a JFR recording becomes a few-hundred-token, source-attributed, <strong>LLM-ready</strong> diagnosis instead of a multi-MB <code>jfr print</code> dump.</span>
     <span class="hub-card-tags">profiling · MCP · LLM-ready</span>
   </a>
-  <a class="hub-card" href="/jhelm/current/index.html">
+  <a class="hub-card" href="/jhelm/current/">
     <span class="hub-card-name">jhelm</span>
     <span class="hub-card-desc">Native Java Helm — render charts and manage releases without the Go binary. <strong>Byte-for-byte across 346 real charts</strong>, now MCP-native. Built on gotmpl4j.</span>
     <span class="hub-card-tags">kubernetes · helm · MCP</span>
   </a>
-  <a class="hub-card" href="/alexmskills/index.html">
+  <a class="hub-card" href="/alexmskills/">
     <span class="hub-card-name">alexmskills</span>
     <span class="hub-card-desc">A curated Claude Code marketplace of <strong>self-learning</strong> skills and agents — a <code>CLAUDE.md</code> that prunes its own decisions, a delivery crew, a brainstorm panel, evolving roles, and a prompt coach that nudges you toward better prompts.</span>
     <span class="hub-card-tags">claude code · self-learning</span>
   </a>
-  <a class="hub-card" href="/unitrack/index.html">
+  <a class="hub-card" href="/unitrack/">
     <span class="hub-card-name">UniTrack</span>
     <span class="hub-card-desc">Self-hosted test &amp; coverage tracking that explains <strong>why</strong> builds break — quality gate, flaky detection, failure clustering, polyglot coverage, GitHub PR checks.</span>
     <span class="hub-card-tags">testing · coverage · self-hosted</span>
   </a>
 </div>
+<!-- END cards:featured -->
 ++++
 
 == Libraries and tools
 
 ++++
+<!-- BEGIN cards:libraries -->
 <div class="hub-cards">
-  <a class="hub-card" href="/gotmpl4j/current/index.html">
+  <a class="hub-card" href="/gotmpl4j/current/">
     <span class="hub-card-name">gotmpl4j</span>
     <span class="hub-card-desc">Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity across <strong>1,305 of Go's own test cases</strong>. The engine under jhelm.</span>
     <span class="hub-card-tags">go template · jvm</span>
   </a>
-  <a class="hub-card" href="/notify4j/current/index.html">
+  <a class="hub-card" href="/notify4j/current/">
     <span class="hub-card-name">notify4j</span>
     <span class="hub-card-desc">Embeddable multi-channel notifications for Java/Spring Boot — Slack, Teams, Discord, Telegram, ntfy, PagerDuty… as Apprise-style URLs. No server to run.</span>
     <span class="hub-card-tags">spring · notifications</span>
   </a>
-  <a class="hub-card" href="/spring-boot-config-json-schema-starter/current/index.html">
+  <a class="hub-card" href="/spring-boot-config-json-schema-starter/current/">
     <span class="hub-card-name">Config JSON Schema</span>
     <span class="hub-card-desc">Auto-generate JSON Schema from your <code>@ConfigurationProperties</code> — IDE autocomplete and config validation in CI.</span>
     <span class="hub-card-tags">spring boot</span>
   </a>
-  <a class="hub-card" href="/extensions/current/index.html">
+  <a class="hub-card" href="/extensions/current/">
     <span class="hub-card-name">Actuator Extensions</span>
     <span class="hub-card-desc">A sensitive-data sanitizer plus extra health indicators (HTTP, port, manual) for better Spring Boot monitoring.</span>
     <span class="hub-card-tags">spring · actuator</span>
   </a>
-  <a class="hub-card" href="/jsupervisor/current/index.html">
+  <a class="hub-card" href="/jsupervisor/current/">
     <span class="hub-card-name">JSupervisor</span>
     <span class="hub-card-desc">supervisord for the JVM — process supervision with HTTP/TCP/Actuator/CLI health checks, log rotation, and a UI/REST/CLI.</span>
     <span class="hub-card-tags">java · ops</span>
   </a>
-  <a class="hub-card" href="/yj-schema-validator/current/index.html">
+  <a class="hub-card" href="/yj-schema-validator/current/">
     <span class="hub-card-name">yj-schema-validator</span>
     <span class="hub-card-desc">Validate YAML/JSON against JSON Schema (drafts 2019-09 / 2020-12) — colored / JSON / JUnit output for quick checks or CI gates.</span>
     <span class="hub-card-tags">cli · ci</span>
   </a>
-  <a class="hub-card" href="/spring-boot-playground/current/index.html">
+  <a class="hub-card" href="/spring-boot-playground/current/">
     <span class="hub-card-name">Spring Boot Examples</span>
     <span class="hub-card-desc">A hands-on hub of Spring Boot example projects — REST, security, JPA, OpenAPI, admin monitoring, and AI integrations.</span>
     <span class="hub-card-tags">spring · learning</span>
   </a>
 </div>
+<!-- END cards:libraries -->
 ++++

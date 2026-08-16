@@ -1,0 +1,142 @@
+# Single source of truth for the project list shown across the hub.
+#
+# Three surfaces are GENERATED from this file — do not hand-edit them:
+#   * modules/ROOT/nav.adoc                       (home sidebar)
+#   * modules/ROOT/pages/index.adoc               (homepage cards, between markers)
+#   * supplemental-ui/partials/header-content.hbs (both navbar dropdowns, between markers)
+#
+# After editing this file run:
+#     python3 bin/gen-project-lists.py
+# and commit the regenerated files. CI runs `--check` and fails the build if the
+# generated output has drifted from this file.
+#
+# `component` must match the Antora component name that the corresponding entry in
+# antora-playbook.yml's content.sources produces — `--check` verifies the two agree,
+# so adding a source without adding it here (or vice versa) is a build failure.
+# It is NOT the repo name: e.g. component `extensions` comes from repo
+# `spring-boot-actuator-extensions`.
+#
+# `url` is the component's published base URL. Projects whose antora.yml sets
+# `version: true` publish under /<component>/current/; those pinning a literal
+# version (unitrack, alexmskills) publish at /<component>/.
+
+groups:
+  - id: featured
+    heading: Featured
+  - id: libraries
+    heading: Libraries and tools
+
+projects:
+  # --- Featured -------------------------------------------------------------
+  - component: jvmlens
+    label: jvmlens
+    group: featured
+    url: /jvmlens/current/
+    repo: alexmond/jvmlens
+    tags: [profiling, MCP, LLM-ready]
+    blurb: >-
+      JVM diagnostics your AI agent can actually read — a JFR recording becomes a
+      few-hundred-token, source-attributed, <strong>LLM-ready</strong> diagnosis instead of a
+      multi-MB <code>jfr print</code> dump.
+
+  - component: jhelm
+    label: jhelm
+    group: featured
+    url: /jhelm/current/
+    repo: alexmond/jhelm
+    tags: [kubernetes, helm, MCP]
+    blurb: >-
+      Native Java Helm — render charts and manage releases without the Go binary.
+      <strong>Byte-for-byte across 346 real charts</strong>, now MCP-native. Built on gotmpl4j.
+
+  - component: alexmskills
+    label: alexmskills
+    group: featured
+    url: /alexmskills/
+    repo: alexmond/alexmskills
+    tags: [claude code, self-learning]
+    blurb: >-
+      A curated Claude Code marketplace of <strong>self-learning</strong> skills and agents — a
+      <code>CLAUDE.md</code> that prunes its own decisions, a delivery crew, a brainstorm panel,
+      evolving roles, and a prompt coach that nudges you toward better prompts.
+
+  - component: unitrack
+    label: UniTrack
+    group: featured
+    url: /unitrack/
+    repo: alexmond/unitrack
+    tags: [testing, coverage, self-hosted]
+    blurb: >-
+      Self-hosted test &amp; coverage tracking that explains <strong>why</strong> builds break —
+      quality gate, flaky detection, failure clustering, polyglot coverage, GitHub PR checks.
+
+  # --- Libraries and tools --------------------------------------------------
+  - component: gotmpl4j
+    label: gotmpl4j
+    group: libraries
+    url: /gotmpl4j/current/
+    repo: alexmond/gotmpl4j
+    tags: [go template, jvm]
+    blurb: >-
+      Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity
+      across <strong>1,305 of Go's own test cases</strong>. The engine under jhelm.
+
+  - component: notify4j
+    label: notify4j
+    group: libraries
+    url: /notify4j/current/
+    repo: alexmond/notify4j
+    tags: [spring, notifications]
+    blurb: >-
+      Embeddable multi-channel notifications for Java/Spring Boot — Slack, Teams, Discord,
+      Telegram, ntfy, PagerDuty… as Apprise-style URLs. No server to run.
+
+  - component: spring-boot-config-json-schema-starter
+    label: Config JSON Schema
+    group: libraries
+    url: /spring-boot-config-json-schema-starter/current/
+    repo: alexmond/spring-boot-config-json-schema
+    tags: [spring boot]
+    blurb: >-
+      Auto-generate JSON Schema from your <code>@ConfigurationProperties</code> — IDE
+      autocomplete and config validation in CI.
+
+  - component: extensions
+    label: Actuator Extensions
+    group: libraries
+    url: /extensions/current/
+    repo: alexmond/spring-boot-actuator-extensions
+    tags: [spring, actuator]
+    blurb: >-
+      A sensitive-data sanitizer plus extra health indicators (HTTP, port, manual) for better
+      Spring Boot monitoring.
+
+  - component: jsupervisor
+    label: JSupervisor
+    group: libraries
+    url: /jsupervisor/current/
+    repo: alexmond/jsupervisor
+    tags: [java, ops]
+    blurb: >-
+      supervisord for the JVM — process supervision with HTTP/TCP/Actuator/CLI health checks,
+      log rotation, and a UI/REST/CLI.
+
+  - component: yj-schema-validator
+    label: yj-schema-validator
+    group: libraries
+    url: /yj-schema-validator/current/
+    repo: alexmond/yj-schema-validator
+    tags: [cli, ci]
+    blurb: >-
+      Validate YAML/JSON against JSON Schema (drafts 2019-09 / 2020-12) — colored / JSON /
+      JUnit output for quick checks or CI gates.
+
+  - component: spring-boot-playground
+    label: Spring Boot Examples
+    group: libraries
+    url: /spring-boot-playground/current/
+    repo: alexmond/spring-boot-playground
+    tags: [spring, learning]
+    blurb: >-
+      A hands-on hub of Spring Boot example projects — REST, security, JPA, OpenAPI, admin
+      monitoring, and AI integrations.

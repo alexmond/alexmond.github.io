@@ -28,6 +28,13 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      # The home sidebar, homepage cards and both navbar dropdowns are generated from
+      # projects.yml. Fail before building rather than deploy a half-updated project list.
+      - name: Check generated project lists are current
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 bin/gen-project-lists.py --check
+
       - name: Build with Maven
         run: mvn -B package --file pom.xml --no-transfer-progress
 

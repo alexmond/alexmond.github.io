@@ -1,3 +1,5 @@
+// generated from projects.yml by bin/gen-project-lists.py — do not edit by hand
+
 * xref:index.adoc[My Dev Hub]
 
 .Featured
