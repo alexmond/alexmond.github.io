@@ -1,1 +1,19 @@
 * xref:index.adoc[My Dev Hub]
+
+.Featured
+* link:/jvmlens/current/[jvmlens]
+* link:/jhelm/current/[jhelm]
+* link:/alexmskills/[alexmskills]
+* link:/unitrack/[UniTrack]
+
+.Libraries and tools
+* link:/gotmpl4j/current/[gotmpl4j]
+* link:/notify4j/current/[notify4j]
+* link:/spring-boot-config-json-schema-starter/current/[Config JSON Schema]
+* link:/extensions/current/[Actuator Extensions]
+* link:/jsupervisor/current/[JSupervisor]
+* link:/yj-schema-validator/current/[yj-schema-validator]
+* link:/spring-boot-playground/current/[Spring Boot Examples]
+
+.Elsewhere
+* https://github.com/alexmond[GitHub^]
