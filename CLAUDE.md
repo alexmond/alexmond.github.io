@@ -28,12 +28,14 @@ There are no test or lint commands — the project is purely documentation.
 
 **Key files:**
 - `antora-playbook.yml` — Antora playbook: content sources, UI bundle, site config, analytics
+- `projects.yml` — **single source of truth for the project list**; four surfaces are generated from it
+- `bin/gen-project-lists.py` — renders those surfaces; `--check` is the CI drift gate
 - `antora.yml` — local component descriptor (component name: `home`)
 - `pom.xml` — Maven build: Node/NPM versions, plugin versions
-- `modules/ROOT/pages/index.adoc` — main homepage content
-- `modules/ROOT/nav.adoc` — site navigation
+- `modules/ROOT/pages/index.adoc` — main homepage content (card blocks *generated*)
+- `modules/ROOT/nav.adoc` — home sidebar (*fully generated*)
 - `supplemental-ui/` — UI customizations (header, CSS, icons, verification files)
-- `supplemental-ui/partials/header-content.hbs` — custom Handlebars navbar template
+- `supplemental-ui/partials/header-content.hbs` — custom Handlebars navbar (dropdowns *generated*)
 - `supplemental-ui/ui.yml` — declares supplemental static files
 
 **Deployment:** GitHub Actions (`.github/workflows/deploy_docs.yml`) builds on push to `main`, deploys to both GitHub Pages and a remote server via SCP.
@@ -42,6 +44,21 @@ There are no test or lint commands — the project is purely documentation.
 
 **Bumping a project version:** Edit the `tags` value for the relevant source in `antora-playbook.yml`.
 
-**Adding a new project:** Add a new entry under `content.sources` in `antora-playbook.yml` and update the navbar in `supplemental-ui/partials/header-content.hbs`.
+**Adding a new project:** Two edits, then regenerate.
+
+1. Add the entry under `content.sources` in `antora-playbook.yml` (what Antora builds).
+2. Add the project to `projects.yml` (what the site *shows* — label, url, repo, group, blurb, tags).
+3. Run `python3 bin/gen-project-lists.py` and commit the result.
+
+The project list appears on four surfaces — the home sidebar (`modules/ROOT/nav.adoc`), the
+homepage cards (`modules/ROOT/pages/index.adoc`), and both navbar dropdowns
+(`supplemental-ui/partials/header-content.hbs`). **All four are generated from
+`projects.yml`; never hand-edit them** — the generator rewrites the whole nav file and the
+regions between the `BEGIN`/`END` markers in the other two.
+
+CI (`.github/workflows/project-lists.yml` on PRs, and a step in the deploy workflow) runs
+`bin/gen-project-lists.py --check`, which fails on a stale generated file *and* on a
+playbook content source with no `projects.yml` entry (or vice versa) — so a half-added
+project can't ship.
 
 **UI customization:** Modify files in `supplemental-ui/`. The site uses Spring IO Antora UI bundle v0.4.15 with supplemental overrides.

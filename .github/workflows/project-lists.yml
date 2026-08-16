@@ -1,0 +1,28 @@
+name: project-lists
+
+# The project list appears on four surfaces (home sidebar, homepage cards, and both
+# navbar dropdowns). All four are generated from projects.yml by bin/gen-project-lists.py.
+# This gate fails a PR that edits one by hand, forgets to regenerate after editing
+# projects.yml, or adds an antora-playbook.yml content source without listing the project.
+# Pushes to main are covered by the same check inside the deploy workflow.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - run: python3 -m pip install --quiet pyyaml
+
+      - name: Check generated project lists are current
+        run: python3 bin/gen-project-lists.py --check
