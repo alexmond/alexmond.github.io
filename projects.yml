@@ -81,6 +81,17 @@ projects:
       Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity
       across <strong>1,305 of Go's own test cases</strong>. The engine under jhelm.
 
+  - component: gotmpl4j-spring-boot
+    label: gotmpl4j-spring-boot
+    group: libraries
+    url: /gotmpl4j-spring-boot/current/
+    repo: alexmond/gotmpl4j-spring-boot
+    tags: [spring boot, go template]
+    blurb: >-
+      Spring Boot integration for gotmpl4j — starter, MVC/WebFlux <code>ViewResolver</code>, and
+      Spring-context template functions. <strong>One branch per Spring Boot line</strong>,
+      versioned to match.
+
   - component: notify4j
     label: notify4j
     group: libraries
