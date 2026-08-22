@@ -54,6 +54,11 @@ Alex Mondshain <alex.mondshain@gmail.com>
     <span class="hub-card-desc">Pure-Java Go <code>text/template</code> + Sprig — no Go toolchain. Byte-for-byte parity across <strong>1,305 of Go's own test cases</strong>. The engine under jhelm.</span>
     <span class="hub-card-tags">go template · jvm</span>
   </a>
+  <a class="hub-card" href="/gotmpl4j-spring-boot/current/">
+    <span class="hub-card-name">gotmpl4j-spring-boot</span>
+    <span class="hub-card-desc">Spring Boot integration for gotmpl4j — starter, MVC/WebFlux <code>ViewResolver</code>, and Spring-context template functions. <strong>One branch per Spring Boot line</strong>, versioned to match.</span>
+    <span class="hub-card-tags">spring boot · go template</span>
+  </a>
   <a class="hub-card" href="/notify4j/current/">
     <span class="hub-card-name">notify4j</span>
     <span class="hub-card-desc">Embeddable multi-channel notifications for Java/Spring Boot — Slack, Teams, Discord, Telegram, ntfy, PagerDuty… as Apprise-style URLs. No server to run.</span>
