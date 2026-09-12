@@ -1,0 +1,15 @@
+{{!-- Bundle article.hbs (antora-ui-spring v0.4.26) + the star-cta card above pagination. --}}
+<article class="doc">
+{{> breadcrumbs}}
+{{> article-latest}}
+{{#with page.title}}
+<h1 id="page-title" class="page">{{{this}}}</h1>
+{{/with}}
+{{#with page.attributes.author}}
+<p class="page-author">{{this}}</p>
+{{/with}}
+{{{page.contents}}}
+{{> nav-section-summary}}
+{{> star-cta}}
+{{> pagination}}
+</article>

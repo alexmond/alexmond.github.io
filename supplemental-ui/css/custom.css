@@ -146,3 +146,89 @@
     letter-spacing: .06em;
     opacity: .55;
 }
+
+/* ===== "Star on GitHub" ask =====
+   Sidebar button (supplemental toc.hbs) + end-of-page card (star-cta.hbs).
+   Colours use the bundle's theme variables, so dark mode needs no extra rules.
+   GitHub's star yellow is the one fixed colour — it reads on both themes. */
+.star-icon {
+    width: 16px;
+    height: 16px;
+    fill: #e3b341;
+    vertical-align: -2px;
+    flex-shrink: 0;
+}
+.sidebar-links a.star-button {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    height: auto;
+    line-height: 1.2;
+    margin: 12px 0 0;
+    padding: .4rem .8rem;
+    border: 1px solid var(--panel-border-color);
+    border-radius: 6px;
+    background: var(--panel-background);
+    font-weight: 600;
+}
+.sidebar-links a.star-button:hover {
+    border-color: #e3b341;
+}
+/* The bundle's `html.dark-theme .sidebar-links a svg` recolours sidebar icons
+   white; match its specificity so the star stays yellow in dark mode. */
+.sidebar-links a.star-button svg,
+html.dark-theme .sidebar-links a.star-button svg,
+html.dark-theme .sidebar-links a.star-button:hover svg {
+    position: static;
+    width: 16px;
+    height: 16px;
+    fill: #e3b341;
+}
+.doc .star-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 1.5rem;
+    margin: 3rem 0 1.5rem;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--panel-border-color);
+    border-left: 4px solid #e3b341;
+    border-radius: 6px;
+    background: var(--panel-background);
+}
+.doc .star-cta-text {
+    flex: 1 1 18rem;
+    hyphens: manual;
+    min-width: 0;
+}
+.doc .star-cta p {
+    margin: 0;
+}
+.doc .star-cta .star-cta-title {
+    font-weight: 600;
+    color: var(--body-font-dark-color);
+}
+.doc .star-cta .star-cta-body {
+    margin-top: .25rem;
+    font-size: .95em;
+    color: var(--body-font-color);
+}
+.doc a.star-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--panel-border-color);
+    border-radius: 6px;
+    background: var(--body-background);
+    color: var(--body-font-dark-color);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.doc a.star-cta-button:hover {
+    border-color: #e3b341;
+    color: var(--body-font-dark-color);
+    text-decoration: none;
+}
