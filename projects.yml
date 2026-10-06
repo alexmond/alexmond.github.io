@@ -122,6 +122,17 @@ projects:
       A sensitive-data sanitizer plus extra health indicators (HTTP, port, manual) for better
       Spring Boot monitoring.
 
+  - component: spring-boot-admin-extensions
+    label: Spring Boot Admin Extensions
+    group: libraries
+    url: /spring-boot-admin-extensions/current/
+    repo: alexmond/spring-boot-admin-extensions
+    tags: [spring boot admin, redis, vue]
+    blurb: >-
+      Extensions for Spring Boot Admin — an <strong>Environments</strong> page, a
+      <strong>Live Metrics</strong> view, and a Redis event store that survives a Redis outage.
+      One branch per Spring Boot line.
+
   - component: jsupervisor
     label: JSupervisor
     group: libraries
