@@ -14,6 +14,7 @@
 * link:/notify4j/current/[notify4j]
 * link:/spring-boot-config-json-schema-starter/current/[Config JSON Schema]
 * link:/extensions/current/[Actuator Extensions]
+* link:/spring-boot-admin-extensions/current/[Spring Boot Admin Extensions]
 * link:/jsupervisor/current/[JSupervisor]
 * link:/yj-schema-validator/current/[yj-schema-validator]
 * link:/spring-boot-playground/current/[Spring Boot Examples]

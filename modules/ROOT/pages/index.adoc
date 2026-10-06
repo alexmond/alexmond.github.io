@@ -74,6 +74,11 @@ Alex Mondshain <alex.mondshain@gmail.com>
     <span class="hub-card-desc">A sensitive-data sanitizer plus extra health indicators (HTTP, port, manual) for better Spring Boot monitoring.</span>
     <span class="hub-card-tags">spring · actuator</span>
   </a>
+  <a class="hub-card" href="/spring-boot-admin-extensions/current/">
+    <span class="hub-card-name">Spring Boot Admin Extensions</span>
+    <span class="hub-card-desc">Extensions for Spring Boot Admin — an <strong>Environments</strong> page, a <strong>Live Metrics</strong> view, and a Redis event store that survives a Redis outage. One branch per Spring Boot line.</span>
+    <span class="hub-card-tags">spring boot admin · redis · vue</span>
+  </a>
   <a class="hub-card" href="/jsupervisor/current/">
     <span class="hub-card-name">JSupervisor</span>
     <span class="hub-card-desc">supervisord for the JVM — process supervision with HTTP/TCP/Actuator/CLI health checks, log rotation, and a UI/REST/CLI.</span>
