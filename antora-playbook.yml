@@ -54,7 +54,7 @@ content:
       edit_url: false
     - url: https://github.com/alexmond/notify4j.git
       branches: []
-      tags: 1.1.1
+      tags: 1.2.0
       start_path: docs
       edit_url: false
     # One tag per maintained Spring Boot line (main = 4.1, maintenance = 4.0).
