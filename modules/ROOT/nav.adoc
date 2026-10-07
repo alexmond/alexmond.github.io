@@ -12,6 +12,7 @@
 * link:/gotmpl4j/current/[gotmpl4j]
 * link:/gotmpl4j-spring-boot/current/[gotmpl4j-spring-boot]
 * link:/notify4j/current/[notify4j]
+* link:/notify4j-spring-boot/current/[notify4j-spring-boot]
 * link:/spring-boot-config-json-schema-starter/current/[Config JSON Schema]
 * link:/extensions/current/[Actuator Extensions]
 * link:/spring-boot-admin-extensions/current/[Spring Boot Admin Extensions]
