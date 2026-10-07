@@ -63,6 +63,12 @@ content:
       tags: [4.0.8.1, 4.1.1.1]
       start_path: docs
       edit_url: false
+    # Pinned to the newest version that is on Maven Central (4.1.1.1 is tagged but not published yet).
+    - url: https://github.com/alexmond/uniauth.git
+      branches: []
+      tags: [4.1.0.3]
+      start_path: docs
+      edit_url: false
     - url: https://github.com/alexmond/jhelm.git
       edit_url: false
       branches: []
