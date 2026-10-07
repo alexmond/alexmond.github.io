@@ -113,6 +113,17 @@ projects:
       auto-configures the <code>Notifications</code> facade. <strong>One branch per Spring Boot
       line</strong>, versioned to match.
 
+  - component: uniauth
+    label: UniAuth
+    group: libraries
+    url: /uniauth/current/
+    repo: alexmond/uniauth
+    tags: [spring boot, security]
+    blurb: >-
+      Spring Boot starter that puts <strong>OAuth2 / OIDC, SAML 2.0, LDAP and internal
+      accounts</strong> behind one Spring Security filter chain — one login page, one
+      <code>uniauth.*</code> configuration, and an optional approval gate.
+
   - component: spring-boot-config-json-schema-starter
     label: Config JSON Schema
     group: libraries

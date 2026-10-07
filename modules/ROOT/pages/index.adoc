@@ -69,6 +69,11 @@ Alex Mondshain <alex.mondshain@gmail.com>
     <span class="hub-card-desc">Spring Boot starter for notify4j — binds the <code>notify4j.*</code> properties and auto-configures the <code>Notifications</code> facade. <strong>One branch per Spring Boot line</strong>, versioned to match.</span>
     <span class="hub-card-tags">spring boot · notifications</span>
   </a>
+  <a class="hub-card" href="/uniauth/current/">
+    <span class="hub-card-name">UniAuth</span>
+    <span class="hub-card-desc">Spring Boot starter that puts <strong>OAuth2 / OIDC, SAML 2.0, LDAP and internal accounts</strong> behind one Spring Security filter chain — one login page, one <code>uniauth.*</code> configuration, and an optional approval gate.</span>
+    <span class="hub-card-tags">spring boot · security</span>
+  </a>
   <a class="hub-card" href="/spring-boot-config-json-schema-starter/current/">
     <span class="hub-card-name">Config JSON Schema</span>
     <span class="hub-card-desc">Auto-generate JSON Schema from your <code>@ConfigurationProperties</code> — IDE autocomplete and config validation in CI.</span>
