@@ -102,6 +102,17 @@ projects:
       Embeddable multi-channel notifications for Java/Spring Boot — Slack, Teams, Discord,
       Telegram, ntfy, PagerDuty… as Apprise-style URLs. No server to run.
 
+  - component: notify4j-spring-boot
+    label: notify4j-spring-boot
+    group: libraries
+    url: /notify4j-spring-boot/current/
+    repo: alexmond/notify4j-spring-boot
+    tags: [spring boot, notifications]
+    blurb: >-
+      Spring Boot starter for notify4j — binds the <code>notify4j.*</code> properties and
+      auto-configures the <code>Notifications</code> facade. <strong>One branch per Spring Boot
+      line</strong>, versioned to match.
+
   - component: spring-boot-config-json-schema-starter
     label: Config JSON Schema
     group: libraries

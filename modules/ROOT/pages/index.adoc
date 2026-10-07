@@ -64,6 +64,11 @@ Alex Mondshain <alex.mondshain@gmail.com>
     <span class="hub-card-desc">Embeddable multi-channel notifications for Java/Spring Boot — Slack, Teams, Discord, Telegram, ntfy, PagerDuty… as Apprise-style URLs. No server to run.</span>
     <span class="hub-card-tags">spring · notifications</span>
   </a>
+  <a class="hub-card" href="/notify4j-spring-boot/current/">
+    <span class="hub-card-name">notify4j-spring-boot</span>
+    <span class="hub-card-desc">Spring Boot starter for notify4j — binds the <code>notify4j.*</code> properties and auto-configures the <code>Notifications</code> facade. <strong>One branch per Spring Boot line</strong>, versioned to match.</span>
+    <span class="hub-card-tags">spring boot · notifications</span>
+  </a>
   <a class="hub-card" href="/spring-boot-config-json-schema-starter/current/">
     <span class="hub-card-name">Config JSON Schema</span>
     <span class="hub-card-desc">Auto-generate JSON Schema from your <code>@ConfigurationProperties</code> — IDE autocomplete and config validation in CI.</span>
