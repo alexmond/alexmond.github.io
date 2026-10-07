@@ -69,10 +69,11 @@ content:
       tags: [4.1.0.3]
       start_path: docs
       edit_url: false
+    # One tag per maintained Spring Boot line (1.6.x = Boot 4.1 on main, 1.5.x = Boot 4.0).
     - url: https://github.com/alexmond/jhelm.git
       edit_url: false
       branches: []
-      tags: 1.5.0
+      tags: [1.5.1, 1.6.0]
       start_path: docs
     - url: https://github.com/alexmond/gotmpl4j.git
       branches: []
