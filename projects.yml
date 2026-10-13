@@ -70,6 +70,17 @@ projects:
       Self-hosted test &amp; coverage tracking that explains <strong>why</strong> builds break —
       quality gate, flaky detection, failure clustering, polyglot coverage, GitHub PR checks.
 
+  - component: kweblens
+    label: kweblens
+    group: featured
+    url: /kweblens/current/
+    repo: alexmond/kweblens
+    tags: [kubernetes, kubernetes IDE, MCP]
+    blurb: >-
+      A web-based <strong>Kubernetes IDE</strong> — Freelens reimagined as a self-hosted Spring
+      Boot app. Browse and edit resources, stream logs, exec into pods, view events and metrics
+      and manage Helm releases, from a browser, a terminal, or an MCP client.
+
   # --- Libraries and tools --------------------------------------------------
   - component: gotmpl4j
     label: gotmpl4j

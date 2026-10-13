@@ -70,6 +70,11 @@ content:
       start_path: docs
       edit_url: false
     # One tag per maintained Spring Boot line (1.6.x = Boot 4.1 on main, 1.5.x = Boot 4.0).
+    - url: https://github.com/alexmond/kweblens.git
+      branches: []
+      tags: v0.2.0
+      start_path: docs
+      edit_url: false
     - url: https://github.com/alexmond/jhelm.git
       edit_url: false
       branches: []
