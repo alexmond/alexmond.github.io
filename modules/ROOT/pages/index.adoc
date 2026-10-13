@@ -40,6 +40,11 @@ Alex Mondshain <alex.mondshain@gmail.com>
     <span class="hub-card-desc">Self-hosted test &amp; coverage tracking that explains <strong>why</strong> builds break — quality gate, flaky detection, failure clustering, polyglot coverage, GitHub PR checks.</span>
     <span class="hub-card-tags">testing · coverage · self-hosted</span>
   </a>
+  <a class="hub-card" href="/kweblens/current/">
+    <span class="hub-card-name">kweblens</span>
+    <span class="hub-card-desc">A web-based <strong>Kubernetes IDE</strong> — Freelens reimagined as a self-hosted Spring Boot app. Browse and edit resources, stream logs, exec into pods, view events and metrics and manage Helm releases, from a browser, a terminal, or an MCP client.</span>
+    <span class="hub-card-tags">kubernetes · kubernetes IDE · MCP</span>
+  </a>
 </div>
 <!-- END cards:featured -->
 ++++
